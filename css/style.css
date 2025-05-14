@@ -100,6 +100,7 @@
     --big-title: #ff9614;
     --main-color: #4e3969;
     --footer-bg-color: #7c69a4;
+    --main-bg-color: #f6f5f3;
     --icon-fb: #1a77f3;
     --icon-tw: #009eff;
     --icon-ig: #e0519f;
@@ -149,22 +150,21 @@ header {
 /* Main */
 
 main {
-    padding: 1rem 0;
+    background-color: var(--main-bg-color);
 }
 
 /* Section Main - top  */
 
 .main-section {
-    padding: 0 1rem;
+    padding: 1.2rem 1rem;
     background-color: #f6f5f3;
 }
 
 
 .desserts-main-top {
-
-
     h2 {
         color: var(--main-color);
+        padding: 1rem;
         font-weight: 800;
     }
 
@@ -172,28 +172,21 @@ main {
         color: #b1a2a8;
         font-size: 0.8rem;
     }
-
-    #video-frame {
-        padding: 1rem 0;
-
-    }
-
 }
 
 
 .desserts-main-bottom {
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
 
-    .col-12 {
-        background-color: white;
-        margin: 0 1rem;
+    h3 {
+        color: black;
     }
-
 
     ul {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 0;
+        color: black;
     }
 }
 
@@ -227,12 +220,12 @@ main {
 
 
 
-
 /* RESPONSIVE TABLET*/
 
 @media screen and (min-width:768px) {
 
     .container {
+
         max-width: 768px;
     }
 
@@ -242,6 +235,31 @@ main {
 
 
 
+    .list-card ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+
+
+
+    .icons-social {
+
+
+        i {
+            height: 45px;
+            width: 120px;
+            line-height: 45px;
+            border-radius: 20px;
+
+        }
+
+
+
+
+    }
 
 
     /* Col responsive col-md- */
@@ -295,8 +313,8 @@ main {
     }
 
 
-}
 
+}
 
 
 
@@ -304,4 +322,22 @@ main {
 
 /* RESPONSIVE DESKTOP */
 
-@media screen and (min-width:992px) {}
+@media screen and (min-width:992px) {
+
+
+    main {
+        width: 100%;
+        color: var(--main-bg-color);
+
+
+
+    }
+
+
+    .container {
+        max-width: 992px;
+        width: 80%;
+        color: var(--main-bg-color);
+
+    }
+}
