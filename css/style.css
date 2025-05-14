@@ -222,8 +222,35 @@ span {
 }
 
 
+/* Presentation  */
+
+#title-presentation {
+    text-align: left;
+    padding: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.presentation-card {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 
 
+    img {
+        width: 70%;
+    }
+}
+
+
+
+/* Footer */
+
+footer {
+    padding: 3rem;
+    background-color: var(--footer-bg-color);
+}
 
 
 
