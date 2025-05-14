@@ -147,7 +147,10 @@ header {
 
 }
 
-
+.banner {
+    display: none;
+    padding: 1rem;
+}
 
 /* Main */
 
@@ -183,6 +186,7 @@ span {
     padding: 0.5rem 1.5rem;
 
     h3 {
+        padding: 1rem 0.5rem;
         color: black;
     }
 
@@ -258,11 +262,12 @@ span {
             border-radius: 20px;
 
         }
-
-
-
-
     }
+
+    .banner {
+        display: block;
+    }
+
 
 
     /* Col responsive col-md- */
