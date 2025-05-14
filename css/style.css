@@ -8,8 +8,88 @@
 /* Utils */
 
 .container {
-    max-width: 1200px;
+    max-width: 425px;
     margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.c-red {
+    color: var(--icon-pin);
+}
+
+.c-blue {
+    color: var(--icon-fb);
+}
+
+/*  Utilities for responsive Layout */
+
+
+[class^="col"] {
+    padding: 1rem;
+    /* border: 1px dashed red; */
+}
+
+.row {
+    display: flex;
+    margin: 0 -1rem;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: 100%;
 }
 
 
@@ -27,9 +107,9 @@
     --icon-yt: #e62222;
 
 
-
-
 }
+
+
 
 
 
@@ -50,6 +130,9 @@ img {
     max-width: 100%;
 }
 
+li {
+    list-style: none;
+}
 
 /* Header */
 
@@ -71,14 +154,14 @@ main {
 
 /* Section Main - top  */
 
-.desserts {
+.main-section {
     padding: 0 1rem;
     background-color: #f6f5f3;
 }
 
 
 .desserts-main-top {
-    padding: 1.5rem 0;
+
 
     h2 {
         color: var(--main-color);
@@ -98,10 +181,60 @@ main {
 }
 
 
+.desserts-main-bottom {
 
-/* RESPONSIVE */
+    .col-12 {
+        background-color: white;
+        margin: 0 1rem;
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+
+/* Social */
+
+.icons-social {
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+
+    span {
+        display: none;
+    }
+
+    i {
+        border: 2px solid white;
+        height: 35px;
+        width: 38px;
+        line-height: 32px;
+        border-radius: 44%;
+        text-align: center;
+        background-color: white;
+    }
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE TABLET*/
 
 @media screen and (min-width:768px) {
+
+    .container {
+        max-width: 768px;
+    }
 
     h1 {
         text-align: left;
@@ -109,4 +242,66 @@ main {
 
 
 
+
+
+    /* Col responsive col-md- */
+
+    .col-md-1 {
+        width: calc(100% / 12 * 1);
+    }
+
+    .col-md-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    .col-md-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .col-md-4 {
+        width: calc(100% / 12 * 4);
+    }
+
+    .col-md-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+    .col-md-6 {
+        width: 50%
+    }
+
+    .col-md-7 {
+        width: calc(100% / 12 * 7);
+    }
+
+    .col-md-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-md-9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    .col-md-10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col-md-11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+
 }
+
+
+
+
+
+
+/* RESPONSIVE DESKTOP */
+
+@media screen and (min-width:992px) {}
