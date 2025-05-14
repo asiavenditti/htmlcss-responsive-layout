@@ -1,0 +1,21 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utils */
+
+
+
+/* Generics */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+h1 {
+    font-family: "Nerko One", cursive;
+}
